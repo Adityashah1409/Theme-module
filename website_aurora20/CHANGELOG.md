@@ -11,3 +11,4 @@ First release for Odoo 20.0.
 * Recent searches, announcement bar, product card styles.
 * Nine building blocks, two mega menus, product data sources, ten homepage designs.
 * Per-website settings with reset.
+* Shop price range and attribute filters follow the selected brand.

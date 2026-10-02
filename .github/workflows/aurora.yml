@@ -5,12 +5,14 @@ on:
     paths:
       - "website_aurora20/**"
       - "theme_aurora20/**"
+      - "website_aurora20_blog/**"
       - "tools/run_aurora_tests.sh"
       - ".github/workflows/aurora.yml"
   pull_request:
     paths:
       - "website_aurora20/**"
       - "theme_aurora20/**"
+      - "website_aurora20_blog/**"
       - "tools/run_aurora_tests.sh"
       - ".github/workflows/aurora.yml"
 

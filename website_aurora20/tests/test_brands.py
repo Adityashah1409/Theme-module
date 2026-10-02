@@ -59,6 +59,12 @@ class TestBrands(AuroraCommon):
         self.assertEqual(res.status_code, 200)
         self.assertIn("Aurora Test Mug", res.text)
 
+    def test_shop_filters_follow_brand(self):
+        """Attribute filters only offer values of the selected brand's products."""
+        self.assertIn("Aurora Test Color", self.url_open("/shop").text)
+        res = self.url_open("/shop?brand=%s" % self.brand_published.id)
+        self.assertNotIn("Aurora Test Color", res.text)
+
     def test_product_search_finds_brand_name(self):
         res = self.url_open("/shop?search=Northwind")
         self.assertIn("Aurora Test Lamp", res.text)

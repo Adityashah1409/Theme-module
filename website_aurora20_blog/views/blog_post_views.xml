@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_blog_post_form" model="ir.ui.view">
+        <field name="name">blog.post.form.aurora</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.view_blog_post_form"/>
+        <field name="arch" type="xml">
+            <field name="tag_ids" position="after">
+                <field name="aurora_is_featured"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_blog_post_list" model="ir.ui.view">
+        <field name="name">blog.post.list.aurora</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.view_blog_post_list"/>
+        <field name="arch" type="xml">
+            <field name="blog_id" position="after">
+                <field name="aurora_is_featured" optional="show" widget="boolean_toggle"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_blog_post_search" model="ir.ui.view">
+        <field name="name">blog.post.search.aurora</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.view_blog_post_search"/>
+        <field name="arch" type="xml">
+            <field name="blog_id" position="after">
+                <filter name="aurora_featured" string="Featured" domain="[('aurora_is_featured', '=', True)]"/>
+            </field>
+        </field>
+    </record>
+</odoo>

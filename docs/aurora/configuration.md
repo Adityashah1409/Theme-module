@@ -37,6 +37,10 @@ normally and see the *Wholesale Information* on product pages.
 
 ## Brands
 
+On `/shop?brand=<id>`, the price range and attribute filters only count that
+brand's products.
+
+
 **Website > eCommerce > Products > Brands**. A brand has a logo, a banner, a
 description, an external website and SEO fields. A brand linked to a website is
 only shown there; a brand without website is shared. Unpublished brands are

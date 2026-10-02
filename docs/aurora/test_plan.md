@@ -1,6 +1,7 @@
 # Test plan
 
-Automated: 40 tests (`website_aurora20/tests`, `theme_aurora20/tests`), run by
+Automated: 46 tests (`website_aurora20/tests`, `theme_aurora20/tests`,
+`website_aurora20_blog/tests`), run by
 `tools/run_aurora_tests.sh` and CI.
 
 | ID | Area | Scenario | Automated by |
@@ -29,6 +30,8 @@ Automated: 40 tests (`website_aurora20/tests`, `theme_aurora20/tests`), run by
 | AT-22 | Settings | Settings are per website; reset restores defaults only | `test_settings_are_per_website`, `test_reset_settings` |
 | AT-23 | Pages | 10 homepage designs are generated and render every block | `test_ten_designs_generated_and_render` |
 | AT-24 | Layout | Containers and buttons follow the settings; announcement bar | `test_layout_renders_containers`, `test_announcement_bar` |
+| AT-25 | Shop | Attribute filters follow the selected brand | `test_shop_filters_follow_brand` |
+| AT-26 | Blog | Featured source lists published featured posts; Aurora card renders with reading time; block and template registered | `website_aurora20_blog/tests` |
 
 ## Manual checks (done for this release, Chromium 1366px and 390px)
 

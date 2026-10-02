@@ -6,6 +6,7 @@ split into two modules:
 | Module | Kind | What it holds |
 | --- | --- | --- |
 | [`website_aurora20`](website_aurora20) | Functional add-on (any theme) | Brands, quick view, cart drawer, B2B mode, recent searches, announcement bar, building blocks, mega menus, 10 homepage designs, per-website storefront settings |
+| [`website_aurora20_blog`](website_aurora20_blog) | Optional bridge (installs itself with Blog) | Featured posts data source, Aurora blog card layout, *Latest Stories* block |
 | [`theme_aurora20`](theme_aurora20) | Website theme | 8 headers, 8 footers, 4 color palettes, typography, shop/product/mega menu/mobile/RTL/accessibility styles |
 
 The split follows how Odoo loads themes: a theme module's views are copied per

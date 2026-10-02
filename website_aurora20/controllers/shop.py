@@ -1,3 +1,4 @@
+from odoo.fields import Domain
 from odoo.http import request, route
 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
@@ -32,6 +33,19 @@ class AuroraWebsiteSale(WebsiteSale):
         if brand_id and request.env.website.aurora_enable_brand_pages:
             options["aurora_brand_id"] = brand_id
         return options
+
+    def _get_shop_domain(self, search, category, attribute_value_dict,
+                         search_in_description=True, tags=None):
+        # The shop builds its price range and attribute filters from this
+        # domain: with the brand in it, they only count that brand's products.
+        domain = super()._get_shop_domain(
+            search, category, attribute_value_dict,
+            search_in_description=search_in_description, tags=tags,
+        )
+        brand_id = _parse_brand(request.params.get("brand")) if request else None
+        if brand_id and request.env.website.aurora_enable_brand_pages:
+            domain = Domain.AND([domain, Domain("aurora_brand_id", "=", brand_id)])
+        return domain
 
     def _shop_get_query_url_kwargs(self, search, min_price, max_price, order=None, tags=None,
                                    on_sale=None, in_stock=None, **kwargs):

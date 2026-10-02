@@ -1,0 +1,120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_aurora20_blog
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-02 04:24+0000\n"
+"PO-Revision-Date: 2026-10-02 04:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_aurora20_blog
+#: model:ir.module.module,description:base.module_website_aurora20_blog
+msgid ""
+"\n"
+"Aurora Storefront - Blog\n"
+"========================\n"
+"\n"
+"Installed automatically when both *Aurora Storefront* and *Blog* are\n"
+"installed, so the theme never depends on the blog app:\n"
+"\n"
+"* \"Featured\" flag on blog posts and a *Featured Blog Posts* data source;\n"
+"* an Aurora card layout for Odoo's *Blog Posts* blocks (grid and carousel),\n"
+"  with cover, category, date, reading time and teaser;\n"
+"* a ready-made *Latest Stories* block in the Aurora group.\n"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.s_aurora_blog_posts
+msgid "All articles"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.module.module,shortdesc:base.module_website_aurora20_blog
+msgid "Aurora Storefront - Blog"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.model,name:website_aurora20_blog.model_blog_post
+msgid "Blog Post"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.model.fields,field_description:website_aurora20_blog.field_blog_post__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.model.fields,field_description:website_aurora20_blog.field_blog_post__aurora_is_featured
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.view_blog_post_search
+msgid "Featured"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:website.snippet.filter,name:website_aurora20_blog.dynamic_filter_featured_blog_posts
+msgid "Featured Blog Posts"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.module.module,summary:base.module_website_aurora20_blog
+msgid "Featured blog posts, Aurora blog cards and a ready-made blog block"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.s_aurora_blog_posts
+msgid "Guides, ideas and news from our team."
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.model.fields,field_description:website_aurora20_blog.field_blog_post__id
+msgid "ID"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.snippets
+msgid "Latest Stories"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.s_aurora_blog_posts
+msgid "Latest stories"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.model.fields,help:website_aurora20_blog.field_blog_post__aurora_is_featured
+msgid "Listed by the 'Featured Blog Posts' data source of the blog blocks."
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.s_aurora_blog_posts
+msgid ""
+"Publish a blog post, or choose another source in the block options, to "
+"display articles here."
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model:ir.model.fields,field_description:website_aurora20_blog.field_blog_post__aurora_reading_time
+msgid "Reading Time (minutes)"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.dynamic_filter_template_blog_post_aurora_card
+msgid "Sample"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.snippets
+msgid "blog, articles, posts, news, stories, aurora"
+msgstr ""
+
+#. module: website_aurora20_blog
+#: model_terms:ir.ui.view,arch_db:website_aurora20_blog.dynamic_filter_template_blog_post_aurora_card
+msgid "min read"
+msgstr ""

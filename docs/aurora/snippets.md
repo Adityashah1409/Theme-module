@@ -15,9 +15,22 @@ Website editor > **Blocks** > **Aurora** group:
 | Customer Reviews | three review cards |
 | Social Gallery | six-image grid |
 | Newsletter Strip | call to action band |
+| Latest Stories | latest blog posts with Aurora cards (needs the Blog app) |
 
 Odoo's own **Products** block gets two more data sources: *Featured* (products
 with a ribbon) and *On Sale* (products with a compare price).
+
+## Blog
+
+When the **Blog** app is installed, `website_aurora20_blog` installs itself:
+
+* **Latest Stories** block in the Aurora group;
+* **Aurora Card** layout in the *Template* option of Odoo's *Blog Posts*
+  blocks (grid and carousel), with category, date, reading time and teaser;
+* **Featured Blog Posts** data source: tick *Featured* on a blog post;
+* posts of one blog (category): the blocks' own *Blog* option.
+
+Without the Blog app nothing of this is loaded and the theme works as usual.
 
 ## Mega menus
 
