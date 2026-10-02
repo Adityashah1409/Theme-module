@@ -1,0 +1,36 @@
+// Aurora blog cards.
+.o_aurora_blog_card {
+    .card {
+        background: transparent;
+    }
+    .o_aurora_blog_card_cover {
+        border-radius: var(--border-radius-lg, 0.75rem);
+        .o_record_cover_container {
+            transition: transform 0.35s ease;
+        }
+    }
+    &:hover .o_aurora_blog_card_cover .o_record_cover_container {
+        transform: scale(1.04);
+    }
+    .o_aurora_blog_card_category {
+        color: $primary;
+        letter-spacing: 0.06em;
+        position: relative;
+        z-index: 2; // above the card's stretched link
+    }
+    a.stretched-link:focus-visible {
+        outline: none;
+        &::after {
+            outline: 2px solid $primary;
+            outline-offset: 4px;
+            border-radius: var(--border-radius-lg, 0.75rem);
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .o_aurora_blog_card .o_aurora_blog_card_cover .o_record_cover_container {
+        transition: none;
+        transform: none !important;
+    }
+}
